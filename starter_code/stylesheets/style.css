@@ -5,3 +5,363 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0b1 | 201101 
+   NOTE: WORK IN PROGRESS
+   USE WITH CAUTION AND TEST WITH ABANDON  */
+
+   html,
+   body,
+   div,
+   span,
+   applet,
+   object,
+   iframe,
+   h1,
+   h2,
+   h3,
+   h4,
+   h5,
+   h6,
+   p,
+   blockquote,
+   pre,
+   a,
+   abbr,
+   acronym,
+   address,
+   big,
+   cite,
+   code,
+   del,
+   dfn,
+   em,
+   img,
+   ins,
+   kbd,
+   q,
+   s,
+   samp,
+   small,
+   strike,
+   strong,
+   sub,
+   sup,
+   tt,
+   var,
+   b,
+   u,
+   i,
+   center,
+   dl,
+   dt,
+   dd,
+   ol,
+   ul,
+   li,
+   fieldset,
+   form,
+   label,
+   legend,
+   table,
+   caption,
+   tbody,
+   tfoot,
+   thead,
+   tr,
+   th,
+   td,
+   article,
+   aside,
+   canvas,
+   details,
+   figcaption,
+   figure,
+   footer,
+   header,
+   hgroup,
+   menu,
+   nav,
+   section,
+   summary,
+   time,
+   mark,
+   audio,
+   video {
+       margin: 0;
+       padding: 0;
+       border: 0;
+       outline: 0;
+       font-size: 100%;
+       font: inherit;
+       vertical-align: baseline;
+   }
+   
+   
+   /* HTML5 display-role reset for older browsers */
+   
+   article,
+   aside,
+   details,
+   figcaption,
+   figure,
+   footer,
+   header,
+   hgroup,
+   menu,
+   nav,
+   section {
+       display: block;
+   }
+   
+   body {
+       line-height: 1.2;
+   }
+   
+   ol,
+   ul {
+       list-style: none;
+   }
+   
+   blockquote,
+   q {
+       quotes: none;
+   }
+   
+   blockquote:before,
+   blockquote:after,
+   q:before,
+   q:after {
+       content: '';
+       content: none;
+   }
+   
+   
+   /* remember to highlight inserts somehow! */
+   
+   ins {
+       text-decoration: none;
+   }
+   
+   del {
+       text-decoration: line-through;
+   }
+   
+   table {
+       border-collapse: collapse;
+       border-spacing: 0;
+   }
+   
+   
+   /*----------------------- Non responsive --------------- */
+   
+   body {
+       font-family: 'Open Sans', sans-serif;
+   }
+   
+   button {
+       border-style: none;
+   }
+   
+   
+   /*----------------------- Extra Small Screen (width < 768px) --------------- */
+   
+   @media only screen and (max-width: 768px) {
+       h1 {
+           order: 0;
+           text-align: left;
+           font-size: 2.5rem;
+           font-weight: 600;
+           line-height: 1;
+           padding: 2vh 0;
+       }
+       h2 {
+           font-size: 1.5rem;
+           font-weight: 600;
+           padding: 2vh 0;
+           line-height: 0.9;
+       }
+       p {
+           font-size: 18px;
+           line-height: 1.2;
+           color: #999;
+           padding: 1vh 0 3vh;
+           word-spacing: 2px;
+           font-weight: 300;
+       }
+       nav {
+           border-bottom: 1px solid #999;
+           display: flex;
+           align-items: center;
+           padding: 2vh 10vw;
+           position: fixed;
+           z-index: 1;
+           background-color: #fff;
+       }
+       .logo img {
+           width: 25%;
+       }
+       .menu ul {
+           display: none
+       }
+       header {
+           display: flex;
+           flex-direction: column;
+           margin: 0 auto;
+           padding: 15vh 10vw;
+       }
+       a .fas {
+           color: #333;
+       }
+       .center {
+           text-align: center;
+       }
+       header img {
+           order: 1;
+           height: auto;
+           width: 100%;
+           margin: auto;
+       }
+       .buttonForm {
+           background-color: #192592;
+           border-radius: 5px;
+           padding: 1.5vh 0;
+           color: #fff;
+           font-size: 1.1em;
+       }
+       .button-white {
+           background-color: #fff;
+           border-radius: 5px;
+           padding: 1.5vh 0;
+           color: #192592;
+           font-size: 1.1em;
+           width: 100%;
+           font-weight: 400;
+       }
+       a .signin,
+       .signin {
+           margin-left: 10%;
+           margin-right: 10%;
+           font-size: 0.9em;
+           font-weight: 400;
+       }
+       .formEmail {
+           display: flex;
+           flex-direction: column;
+       }
+       .formEmail input {
+           padding: 1.5vh 3vw;
+           position: relative;
+           margin-bottom: 5%;
+       }
+       main {
+           background-color: #F4F3F4;
+           padding: 5vh 10vw;
+           margin: 0 auto;
+       }
+       main img {
+           margin: 4vh auto;
+           width: 50%;
+       }
+       main img:hover {
+           width: 60%;
+       }
+       .button-white {
+           order: 0;
+       }
+       div.pictures-logos {
+           display: flex;
+           flex-direction: column;
+       }
+       .tryitforfree {
+           border-bottom: 1px solid #999;
+           padding: 5vh 10vw;
+           margin: 2.5% auto 10%;
+       }
+       .tryIt {
+           font-weight: 600;
+           color: #666;
+       }
+       footer {
+           padding: 0;
+       }
+       img.slackfooter {
+           position: relative;
+           width: 120px;
+           left: 5vw;
+       }
+       div.lists-footer {
+           height: auto;
+           display: grid;
+           grid-template-columns: 150px 10px;
+           padding-bottom: 5vh;
+       }
+       ul.columnlist {
+           padding: 1.5vh 10vw;
+           width: 100px;
+       }
+       ul.columnlist>li {
+           padding: 1vh 0;
+           font-size: 0.7rem; 
+       }
+       ul.columnlist li:first-child {
+           font-weight: 600;
+        }
+       div.bottom-footer {
+           font-size: 0.7rem;;
+           padding: 2.55vh 10vw;
+           background-color: #F4F3F4;
+           text-align: center;
+       }
+     
+       .bottom-list li {
+           display:inline;
+           padding: 1px 3px;
+       }
+
+      .bottom-list, .flag-line, .list-socialntw {
+            padding: 1vh 1vw;
+       }
+
+       .bottom-footer li, .bottom-footer i, .bottom-footer img {
+            padding: 1vh 1vw;
+            text-align: center;
+       }
+
+       .flag-line img {
+           width: 15px;
+           position: relative;
+           bottom: -10px;
+
+       }
+
+   }
+   
+   
+   /*----------------------- Small Screen (961px > width > 767px) ---------------  */
+   
+   @media (min-width: 769px) and (max-width: 999px) {
+       .hamburger {
+           display: none;
+       }
+   }
+   
+   
+   /*----------------------- Medium Screen (1024px > width > 960px) ---------------  */
+   
+   @media (min-width: 960px) and (max-width: 1024px) {
+       body {
+           background-color: green;
+       }
+   }
+   
+   
+   /*----------------------- Large Screen (width > 1200px) ---------------     */
+   
+   @media (min-width: 1025px) {
+       body {
+           background-color: orange;
+       }
+   }
