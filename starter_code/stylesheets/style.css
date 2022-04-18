@@ -212,6 +212,7 @@ nav grey: #5b5e6d;
         }
         a .fas {
             color: #333;
+            font-size: 1.3rem;
         }
         .center {
             text-align: center;
@@ -290,8 +291,8 @@ nav grey: #5b5e6d;
         }
         img.slackfooter {
             position: relative;
-            left: 5vw;
-            left: 6vw;
+            width:80px;
+            padding:0 5vw;
         }
         div.lists-footer {
             height: auto;
@@ -357,7 +358,7 @@ nav grey: #5b5e6d;
             line-height: 0.9;
         }
         p {
-            font-size: 20px;
+            font-size: 22px;
             line-height: 1.5;
             color: #999;
             padding-bottom: 1vh;
@@ -369,9 +370,11 @@ nav grey: #5b5e6d;
             display: flex;
             align-items: center;
             padding: 1vh 5vw;
-            position: sticky;
+            position: fixed;
             z-index: 1;
             background-color: #fff;
+            justify-content: space-between;
+            width: 90%;
         }
         .logo img {
             width: 15%;
@@ -409,7 +412,7 @@ nav grey: #5b5e6d;
             color: #fff;
             font-size: 1.1em;
             width: 200px;
-            height: 60px;
+            height: 70px;
         }
         .button-white {
             background-color: #fff;
@@ -425,7 +428,7 @@ nav grey: #5b5e6d;
             margin-right: auto;
         }
         a .signin, .signin {
-            font-size: 0.9em;
+            font-size: 1.4em;
             font-weight: 400;
         }
         .formEmail {
@@ -439,6 +442,8 @@ nav grey: #5b5e6d;
             margin-right: 2vw;
             border: solid 0.1px #999;
             border-radius: 5px;
+            font-size: 1.1em;
+            height: 75px;
         }
         main {
             background-color: #F4F3F4;
@@ -457,10 +462,11 @@ nav grey: #5b5e6d;
             order: 0;
         }
         div.pictures-logos {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
             padding-top: 2.5vh;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 10px;
+            grid-auto-rows: minmax(100px, auto);
         }
         .tryitforfree {
             border-bottom: 1px solid #999;
@@ -475,40 +481,40 @@ nav grey: #5b5e6d;
         .tryIt {
             font-weight: 600;
             color: #666;
-            font-size: 1.5rem;
+            font-size: 2rem;
             padding: 0px;
             text-align: left;
         }
         img.slackfooter {
             width: 100px;
             height: 100px;
-            display: flex;
         }
         .top-footer {
             display: flex;
-            justify-content: space-around;
+            justify-content: flex-start;
+            padding: 0 2.5vw;
         }
         div.lists-footer {
-            padding-bottom: 2.5vh;
             display: flex;
             justify-content: flex-end;
         }
         ul.columnlist {
             padding: 1.5vh 1.5vw;
             width: 130px;
+            display: flow-root;
         }
         ul.columnlist>li {
             padding: 1vh 0;
-            font-size: 0.8rem; 
+            font-size: 0.9rem; 
         }
         ul.columnlist li:first-child {
             font-weight: 600;
         }
         div.bottom-footer {
-            font-size: 1.1rem;
+            font-size: 0.9rem;
             padding: 2.55vh 2.5vw;
             background-color: #F4F3F4;
-            height: 70px;
+            height: 50px;
             display: flex;
             flex-direction: row;
             align-items: center;
@@ -557,7 +563,7 @@ nav grey: #5b5e6d;
    
    /*----------------------- Medium Screen (1024px > width > 960px) ---------------  */
    
-   @media (min-width: 961px) and (max-width: 1024px) {
+   @media (min-width: 961px) and (max-width: 1199px) {
 
         h1 {
             text-align: left;
@@ -588,6 +594,8 @@ nav grey: #5b5e6d;
             position: sticky;
             z-index: 1;
             background-color: #fff;
+            justify-content: space-between;
+            width: 90%;
         }
         .logo img {
             width: 15%;
@@ -621,7 +629,7 @@ nav grey: #5b5e6d;
             border-radius: 5px;
             padding: 1.5vh 0;
             color: #fff;
-            font-size: 1.1em;
+            font-size: 1.3em;
             width: 250px;
         }
         .button-white {
@@ -638,16 +646,16 @@ nav grey: #5b5e6d;
             margin-right: auto;
         }
         a .signin, .signin {
-            font-size: 0.9em;
+            font-size: 1.3em;
             font-weight: 400;
         }
         .formEmail {
             display: flex;
             justify-content: flex-start;
-            padding-bottom: 1vh;
-            height: 70px;
+            height: 85px;
         }
         .formEmail input {
+            font-size: 1.3em;
             padding: 1.5vh 3vw;
             margin-right: 2vw;
             border: solid 0.1px #999;
@@ -661,20 +669,19 @@ nav grey: #5b5e6d;
         }
         main img {
             margin: 5vh auto;
-            width: 240px;
-            justify-content: center;
-            position: relative;
-            display: flex;
-            padding: 0 20px;
+            width: 260px;
+            padding: 0 15px;
         }
         .button-white {
-            order: 0;
+            width: 400px;
         }
         div.pictures-logos {
             display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
             padding: 2.5vh 0;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px;
+            grid-auto-rows: minmax(100px, auto);
         }
         .tryitforfree {
             border-bottom: 1px solid #999;
@@ -689,18 +696,18 @@ nav grey: #5b5e6d;
         .tryIt {
             font-weight: 600;
             color: #666;
-            font-size: 1.5rem;
+            font-size: 1.7rem;
             padding: 0px;
             text-align: left;
         }
         img.slackfooter {
             width: 100px;
             height: 100px;
-            display: flex;
         }
         .top-footer {
             display: flex;
-            justify-content: space-around;
+            justify-content: flex-start;
+            padding: 0 2vw;
         }
         div.lists-footer {
             display: flex;
@@ -708,20 +715,21 @@ nav grey: #5b5e6d;
         }
         ul.columnlist {
             padding: 1.5vh 1.5vw;
-            width: 130px;
+            width: 160px;
+            display: flow-root;
         }
         ul.columnlist>li {
             padding: 1vh 0;
-            font-size: 0.8rem; 
+            font-size: 1.1rem; 
         }
         ul.columnlist li:first-child {
             font-weight: 600;
         }
         div.bottom-footer {
-            font-size: 1.1rem;
+            font-size: 1.2rem;
             padding: 2.55vh 2.5vw;
             background-color: #F4F3F4;
-            height: 70px;
+            height: 50px;
             display: flex;
             flex-direction: row;
             align-items: center;
@@ -769,17 +777,17 @@ nav grey: #5b5e6d;
     }
    /*----------------------- Large Screen (width > 1200px) ---------------     */
    
-   @media (min-width: 1025px) {
+   @media (min-width: 1200px) {
 
         h1 {
             text-align: left;
-            font-size: 3.5rem;
+            font-size: 4rem;
             font-weight: 800;
             line-height: 1;
             padding: 0 0 1vh;
         }
         h2 {
-            font-size: 2.2rem;
+            font-size: 3rem;
             font-weight: 600;
             padding: 2vh 0;
             line-height: 0.9;
@@ -797,16 +805,19 @@ nav grey: #5b5e6d;
             display: flex;
             align-items: center;
             padding: 1vh 5vw;
-            position: sticky;
+            position: fixed;
             z-index: 1;
             background-color: #fff;
-        }
+            justify-content: space-between;
+            width: 90%;
+        }    
         .logo img {
             width: 25%;
         }
         .menu ul {
             display: flex;
             flex-direction: row;
+            text-align: center;
         }
         .menu li {
             width: 10vw;
@@ -828,8 +839,8 @@ nav grey: #5b5e6d;
         }
         header {
             display: flex;
-            margin: 0 auto;
-            padding: 10vh 5vw;
+            padding: 15vh 5vw 5vw;
+            column-gap: 5vw;
         }
 
         header div {
@@ -845,16 +856,16 @@ nav grey: #5b5e6d;
         header img {
             height: auto;
             margin: auto;
-            width: 350px;
+            width: 500px;
         }
         .buttonForm {
             background-color: #192592;
             border-radius: 5px;
             padding: 1.5vh 0;
             color: #fff;
-            font-size: 1.1em;
-            width: 40%;
-            height: 60px;
+            font-size: 1.4em;
+            width: 300px;
+            height: 90px;     
         }
         .button-white {
             background-color: #fff;
@@ -870,7 +881,7 @@ nav grey: #5b5e6d;
             margin-right: auto;
         }
         a .signin, .signin {
-            font-size: 1.2rem;
+            font-size: 1.4em;
             font-weight: 400;
         }
         .formEmail {
@@ -888,19 +899,22 @@ nav grey: #5b5e6d;
         }
         main img {
             margin: 5vh auto;
-            width: 220px;
+            width: 330px;
             justify-content: center;
             position: relative;
             display: flex;
+            padding: 0 20px;
         }
         .button-white {
-            order: 0;
+            width: 400px;
         }
         div.pictures-logos {
             display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
             padding: 2.5vh 0;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px;
+            grid-auto-rows: minmax(100px, auto);
         }
         .tryitforfree {
             border-bottom: 1px solid #999;
@@ -915,40 +929,42 @@ nav grey: #5b5e6d;
         .tryIt {
             font-weight: 600;
             color: #666;
-            font-size: 1.5rem;
+            font-size: 1.9rem;
             padding: 0px;
             text-align: left;
         }
         img.slackfooter {
-            width: 100px;
-            height: 100px;
-            display: flex;
+            width: 150px;
+            height: 150px;
+            position: relative;
+            top: -2vh;
         }
         .top-footer {
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
+            padding: 0 2vw;
         }
         div.lists-footer {
             padding-bottom: 2.5vh;
             display: flex;
-            justify-content: flex-end;
         }
         ul.columnlist {
             padding: 1.5vh 1.5vw;
-            width: 130px;
+            width: 200px;
+         
         }
         ul.columnlist>li {
-            padding: 1vh 0;
-            font-size: 0.8rem; 
+            padding: 1.5vh 1vw;
+            font-size: 1.2rem;
         }
         ul.columnlist li:first-child {
             font-weight: 600;
         }
         div.bottom-footer {
-            font-size: 1.1rem;
+            font-size: 1.3rem;
             padding: 2.55vh 2.5vw;
             background-color: #F4F3F4;
-            height: 70px;
+            height: 50px;
             display: flex;
             flex-direction: row;
             align-items: center;
