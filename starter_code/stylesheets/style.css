@@ -240,8 +240,8 @@ nav grey: #5b5e6d;
             font-weight: 400;
         }
         a .signin, .signin {
-            font-weight: 400;
-            text-align: center;
+            font-size: 0.9rem;
+            padding: 0.5vh 0;
         }
         .formEmail {
             display: flex;
@@ -386,7 +386,7 @@ nav grey: #5b5e6d;
             display: flex;
             flex-direction: column-reverse;
             margin: 0 auto;
-            padding: 2.5vh 5vw;
+            padding: 10vh 5vw 5vh;
         }
         a .fas {
             color: #333;
@@ -412,7 +412,6 @@ nav grey: #5b5e6d;
             color: #fff;
             font-size: 1.1em;
             width: 200px;
-            height: 70px;
         }
         .button-white {
             background-color: #fff;
@@ -428,8 +427,9 @@ nav grey: #5b5e6d;
             margin-right: auto;
         }
         a .signin, .signin {
-            font-size: 1.4em;
+            font-size: 1em;
             font-weight: 400;
+            padding: 0.5vh 0;
         }
         .formEmail {
             display: flex;
@@ -443,7 +443,6 @@ nav grey: #5b5e6d;
             border: solid 0.1px #999;
             border-radius: 5px;
             font-size: 1.1em;
-            height: 75px;
         }
         main {
             background-color: #F4F3F4;
@@ -646,8 +645,9 @@ nav grey: #5b5e6d;
             margin-right: auto;
         }
         a .signin, .signin {
-            font-size: 1.3em;
+            font-size: 1.1em;
             font-weight: 400;
+            padding: 0.5vh 0;
         }
         .formEmail {
             display: flex;
@@ -821,12 +821,12 @@ nav grey: #5b5e6d;
         }
         .menu li {
             width: 10vw;
-            font-size: 1.1rem;
+            font-size: 1.2rem;
             padding: 0.5vh 0.5vw;
         }
         .menu li:last-child {
             border: solid 1px #999;
-            padding: 0.5vh 1vw;
+            padding: 0.5vh 0vw;
             width: 14vw;
             border-radius: 5px;
         }
@@ -881,13 +881,14 @@ nav grey: #5b5e6d;
             margin-right: auto;
         }
         a .signin, .signin {
-            font-size: 1.4em;
+            font-size: 1.2em;
             font-weight: 400;
+            padding: 0.5vh 0;
         }
         .formEmail {
             display: flex;
             justify-content: flex-start;
-            padding-bottom: 2vh;
+            padding-bottom: 1vh;
         }
         .formEmail input {
             display: none;
@@ -899,7 +900,7 @@ nav grey: #5b5e6d;
         }
         main img {
             margin: 5vh auto;
-            width: 330px;
+            width: 300px;
             justify-content: center;
             position: relative;
             display: flex;
@@ -950,12 +951,12 @@ nav grey: #5b5e6d;
         }
         ul.columnlist {
             padding: 1.5vh 1.5vw;
-            width: 200px;
+            width: 250px;
          
         }
         ul.columnlist>li {
             padding: 1.5vh 1vw;
-            font-size: 1.2rem;
+            font-size: 1.3rem;
         }
         ul.columnlist li:first-child {
             font-weight: 600;
